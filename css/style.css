@@ -1,9 +1,10 @@
 /*основной цвет текста #212121;
 цвет лого #000000;
-цвет лого #2196F3;
+цвет лого и нав #2196F3;
 цвет абзаца #757575;
 цвет адрес rgba(255, 255, 255, 0.6);
 цвет адрес #FFFFFF;
+цвет подвала #2F303A
 */
 body {
   background-color: #e5e5e5;
@@ -12,4 +13,46 @@ body {
 
 .list {
   list-style: none;
+}
+
+.site-nav .link:hover,
+.link:focus {
+  color: #2196f3;
+}
+
+.full-logo {
+  color: black;
+}
+
+.full-logo-footer {
+  color: #ffffff;
+}
+
+.web-logo {
+  color: #2196f3;
+}
+
+p {
+  color: #757575;
+}
+
+.contact {
+  color: #757575;
+}
+
+.bottom-part {
+  background-color: #2f303a;
+}
+
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.buttons {
+  color: #f5f4fa;
+}
+
+.buttons:hover,
+.buttons:focus {
+  color: #2196f3;
 }
