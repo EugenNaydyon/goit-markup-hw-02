@@ -1,8 +1,17 @@
+:root {
+  --primery-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --main-background-color: #ffffff;
+  --button-background-color: #f5f4fa;
+  --section-background-color: #2f303a;
+  --address-link-color: rgba(255, 255, 255, 0.6);
+}
+
 body {
   font-family: Roboto;
-  font-style: normal;
-  background-color: #ffffff;
-  color: #212121;
+  background-color: var(--main-background-color);
+  color: var(--primery-text-color);
 }
 
 .list {
@@ -14,7 +23,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: #2196f3;
+  color: var(--accent-text-color);
   text-decoration: none;
 }
 
@@ -25,31 +34,38 @@ body {
   text-decoration: none;
 }
 
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+
 .contact a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
-  color: #757575;
+  color: var(--title-text-color);
   text-decoration: none;
 }
 
 .button-link {
+  font-family: Roboto;
+  color: var(--primery-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   border: none;
-  background: #f5f4fa;
+  background: var(--button-background-color);
   cursor: pointer;
   border-radius: 4px;
 }
 
 .button-link:focus,
 .button-link:hover {
+  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--main-background-color);
+  background-color: var(--accent-text-color);
   cursor: pointer;
   border-radius: 4px;
 }
@@ -58,8 +74,8 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--main-background-color);
+  background-color: var(--accent-text-color);
   cursor: pointer;
   width: 200px;
   height: 50px;
@@ -72,7 +88,7 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
-  color: black;
+  color: var(--primery-text-color);
   text-decoration: none;
 }
 
@@ -82,16 +98,16 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
-  color: #ffffff;
+  color: var(--main-background-color);
   text-decoration: none;
 }
 
 .web-logo {
-  color: #2196f3;
+  color: var(--accent-text-color);
 }
 
 .bottom-part {
-  background-color: #2f303a;
+  background-color: var(--section-background-color);
 }
 
 .examples h3 {
@@ -105,7 +121,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.8;
-  color: #757575;
+  color: var(--title-text-color);
 }
 
 .details h3 {
@@ -121,14 +137,14 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--title-text-color);
 }
 
 .address-link {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-link-color);
   text-decoration: none;
 }
 
@@ -137,26 +153,26 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
-  color: #2196f3;
+  color: var(--accent-text-color);
 }
 
 .address-footer {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
-  color: #ffffff;
+  color: var(--main-background-color);
   text-decoration: none;
 }
 
 .hero-section {
-  background-color: #2f303a;
+  background-color: var(--section-background-color);
 }
 
 h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: #ffffff;
+  color: var(--main-background-color);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -186,5 +202,9 @@ h2 {
 }
 
 .our-team {
-  background-color: #f5f4fa;
+  background-color: var(--button-background-color);
+}
+
+.footer-contact {
+  font-style: normal;
 }
